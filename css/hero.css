@@ -1,0 +1,130 @@
+.hero-section {
+    padding: 0;
+    position: relative;
+    color: #fff;
+    min-height: 600px;
+    width: 100%;
+}
+
+.hero-tagline {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-tagline h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-tagline h2 {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-tagline h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+
+
+.hero-content {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.hero-pretitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.hero-main-links-jonvieira {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-main-link-item-jonvieira {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6b00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.hero-main-link-item-jonvieira:hover {
+    background-color: #ff8c3f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-main-links-jonvieira {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section {
+        padding: 6rem 0;
+    }
+}

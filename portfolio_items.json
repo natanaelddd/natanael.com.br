@@ -1,0 +1,70 @@
+{
+    "items": [
+        {
+            "type": "site",
+            "image": "img/thumbnails/bluestorm_studios.png",
+            "title": "Bluestorm Studios",
+            "url": "https://bluestormstudios.com.br/"
+        },
+        {
+            "type": "video",
+            "videoId": "GDopEM4T_gI",
+            "title": "V\u00eddeo 1"
+        },
+        {
+            "type": "site",
+            "image": "img/thumbnails/blix_bluestorm.webp",
+            "title": "Blix Bluestorm",
+            "url": "https://blix.bluestormstudios.com.br/"
+        },
+        {
+            "type": "video",
+            "videoId": "AV73Jg6TPAY",
+            "title": "V\u00eddeo 2"
+        },
+        {
+            "type": "site",
+            "image": "img/thumbnails/abranche.jpeg",
+            "title": "Abranche",
+            "url": "http://abranche.com.br/"
+        },
+        {
+            "type": "video",
+            "videoId": "dycbKDgnAeg",
+            "title": "V\u00eddeo 3"
+        },
+        {
+            "type": "site",
+            "image": "img/thumbnails/skibrasil.jpeg",
+            "title": "Ski Brasil",
+            "url": "https://skibrasil.com.br/"
+        },
+        {
+            "type": "video",
+            "videoId": "XWXRepBPFm8",
+            "title": "V\u00eddeo 4"
+        },
+        {
+            "type": "site",
+            "image": "img/thumbnails/showmetech.jpeg",
+            "title": "Showmetech",
+            "url": "https://www.showmetech.com.br/"
+        },
+        {
+            "type": "video",
+            "videoId": "ez_0bsQIYYw",
+            "title": "V\u00eddeo 5"
+        },
+        {
+            "type": "site",
+            "image": "img/thumbnails/instituto_assaf_logo.jpeg",
+            "title": "Instituto Assaf",
+            "url": "https://www.institutoassaf.com.br/"
+        },
+        {
+            "type": "video",
+            "videoId": "Hq5dJw7DZfQ",
+            "title": "V\u00eddeo 6"
+        }
+    ]
+}

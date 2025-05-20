@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias | Natanael.com.br</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-details.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header sticky-header">
+        <div class="container header-container">
+            <a href="index.html#hero" class="logo-link">
+                <img src="img/logo_preto.png" alt="Natanael.com.br Logo" class="site-logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="index.html#hero" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="index.html#videos" class="nav-link">Vídeos</a></li>
+                    <li class="nav-item"><a href="index.html#websites" class="nav-link">Websites</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="noticias.html" class="nav-link active">Notícias</a></li>
+                </ul>
+            </nav>
+            <a href="index.html#descomplicando-digital" class="cta-button">Recursos</a>
+            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navList">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section bg-light">
+            <div class="container">
+                <h1 class="section-title dark-text text-center">Notícias</h1>
+                <div id="rss-feed-container-dayos" class="news-grid">
+                    <!-- Conteúdo da página de notícias será carregado via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2025 Natanael Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" class="whatsapp-icon">
+            <img src="img/whatsapp-logo.png" alt="WhatsApp Icon">
+        </a>
+        <div class="whatsapp-balloon">
+            <span id="whatsappGreeting">Posso ajudar?</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/news_loader.js"></script>
+</body>
+</html>

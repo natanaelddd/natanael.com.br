@@ -1,0 +1,32 @@
+/* Imagens reais para portfólio */
+.showmetech-image {
+    background-image: url('../img/portfolio/showmetech.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.blix-image {
+    background-image: url('../img/portfolio/blix.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ski-image {
+    background-image: url('../img/portfolio/ski_brasil.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.assaf-image {
+    background-image: url('../img/portfolio/instituto_assaf.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}

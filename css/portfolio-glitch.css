@@ -1,0 +1,269 @@
+/* Efeito Glitch RGB para imagens do portfólio */
+.portfolio-card-dayos {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card-dayos:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.portfolio-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Efeito Glitch RGB */
+.portfolio-card-dayos:hover .portfolio-thumbnail {
+    filter: none;
+}
+
+.portfolio-card-dayos::before,
+.portfolio-card-dayos::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.portfolio-card-dayos::before {
+    background: url('') no-repeat center center / cover;
+    mix-blend-mode: screen;
+    transform: translateX(-5px);
+    z-index: 1;
+}
+
+.portfolio-card-dayos::after {
+    background: url('') no-repeat center center / cover;
+    mix-blend-mode: screen;
+    transform: translateX(5px);
+    z-index: 2;
+}
+
+.portfolio-card-dayos:hover::before {
+    opacity: 0.5;
+    animation: glitchRed 0.3s infinite alternate-reverse;
+}
+
+.portfolio-card-dayos:hover::after {
+    opacity: 0.5;
+    animation: glitchBlue 0.3s infinite alternate-reverse;
+}
+
+@keyframes glitchRed {
+    0% {
+        transform: translateX(-5px);
+        filter: hue-rotate(0deg) saturate(2);
+    }
+    100% {
+        transform: translateX(-2px);
+        filter: hue-rotate(45deg) saturate(2);
+    }
+}
+
+@keyframes glitchBlue {
+    0% {
+        transform: translateX(5px);
+        filter: hue-rotate(180deg) saturate(2);
+    }
+    100% {
+        transform: translateX(2px);
+        filter: hue-rotate(225deg) saturate(2);
+    }
+}
+
+/* Estilo jonvieira para o portfólio */
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.case-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-10px);
+}
+
+.case-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    color: #fff;
+}
+
+.case-card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.case-card-description {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.case-card-link {
+    display: inline-block;
+    color: #4a90e2;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.case-card-link:hover {
+    color: #fff;
+}
+
+/* Estilo jonvieira para páginas de case */
+.case-hero-section {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.case-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.case-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    z-index: 2;
+}
+
+.case-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.case-hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.case-hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.case-meta-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.case-meta-item h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.case-meta-item p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.case-content-section {
+    padding: 4rem 0;
+}
+
+.case-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.case-section-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 2rem;
+}
+
+.case-section-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .case-meta-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .case-hero-title {
+        font-size: 2.5rem;
+    }
+}

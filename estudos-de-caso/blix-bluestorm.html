@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blix Bluestorm - Estudo de Caso | Natanael.com.br</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav-details.css">
+    <link rel="stylesheet" href="../css/menu-color.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .case-hero-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        
+        .case-section {
+            margin-bottom: 4rem;
+        }
+        
+        .case-section-image {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .case-meta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .case-meta-item h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        
+        .case-meta-item p {
+            color: #ccc;
+        }
+        
+        .subsection-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        
+        @media (max-width: 768px) {
+            .case-meta {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header sticky-header">
+        <div class="container header-container">
+            <a href="../index.html#hero" class="logo-link">
+                <img src="../img/logo_preto.png" alt="Natanael.com.br Logo" class="site-logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="../index.html#hero" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="../index.html#videos" class="nav-link">Vídeos</a></li>
+                    <li class="nav-item"><a href="../index.html#websites" class="nav-link">Websites</a></li>
+                    <li class="nav-item"><a href="../blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html#descomplicando-digital" class="cta-button">Recursos</a>
+            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navList">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="case-hero" class="content-section bg-dark">
+            <div class="container">
+                <h1 class="section-title light-text">Blix Bluestorm</h1>
+                <p class="section-paragraph light-text">Desenvolvimento de landing page interativa para o lançamento do jogo Blix, com elementos 3D e animações imersivas.</p>
+                
+                <img src="../img/thumbnails/blix_bluestorm.webp" alt="Blix Bluestorm Landing Page" class="case-hero-image">
+                
+                <div class="case-meta">
+                    <div class="case-meta-item">
+                        <h4>Cliente</h4>
+                        <p>Bluestorm Studios</p>
+                    </div>
+                    <div class="case-meta-item">
+                        <h4>Entregáveis</h4>
+                        <p>Design UI/UX, Desenvolvimento Frontend, Animações 3D, Integração com API de Pré-venda</p>
+                    </div>
+                    <div class="case-meta-item">
+                        <h4>Função</h4>
+                        <p>Designer de Interface e Desenvolvedor Frontend</p>
+                    </div>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Visão Geral do Projeto</h2>
+                    <p class="section-paragraph light-text">
+                        Blix é um jogo indie de aventura e quebra-cabeças desenvolvido pela Bluestorm Studios. Para o lançamento deste título, o estúdio precisava de uma landing page que não apenas informasse sobre o jogo, mas também proporcionasse uma experiência que refletisse a atmosfera e mecânicas únicas do game. O objetivo era criar uma página web que funcionasse como uma extensão do universo do jogo, captando a atenção dos potenciais jogadores e convertendo visitas em pré-vendas.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Conceito e Design</h2>
+                    <p class="section-paragraph light-text">
+                        O design da landing page foi inspirado diretamente na estética visual do jogo, que combina elementos minimalistas com efeitos de luz e partículas. Utilizei uma paleta de cores predominantemente azul e roxa, com acentos em cores neon, refletindo o ambiente digital e futurista do jogo.
+                    </p>
+                    <img src="../img/thumbnails/blix_bluestorm.webp" alt="Design da Landing Page Blix" class="case-section-image">
+                    <p class="section-paragraph light-text">
+                        A estrutura da página foi planejada para contar a história do jogo de forma progressiva, revelando elementos à medida que o usuário navega, similar à progressão de fases em um jogo. Cada seção apresenta uma mecânica ou aspecto diferente do Blix, com interações específicas que demonstram o conceito.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Desenvolvimento e Tecnologias</h2>
+                    <p class="section-paragraph light-text">
+                        O desenvolvimento da landing page envolveu tecnologias avançadas para criar uma experiência web imersiva. Utilizei Three.js para renderizar elementos 3D do jogo diretamente no navegador, permitindo que os visitantes interagissem com modelos de personagens e cenários. As animações foram implementadas com GSAP (GreenSock Animation Platform) para garantir transições suaves e efeitos visuais de alta qualidade.
+                    </p>
+                    <p class="section-paragraph light-text">
+                        Um dos principais desafios foi otimizar o desempenho para garantir que a página carregasse rapidamente e funcionasse bem em diferentes dispositivos. Implementei técnicas de carregamento progressivo e otimização de assets para equilibrar a qualidade visual com a performance.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Integração e Funcionalidades</h2>
+                    <p class="section-paragraph light-text">
+                        A landing page foi integrada com a API de pré-venda da plataforma de distribuição do jogo, permitindo que os usuários reservassem sua cópia diretamente pelo site. Também implementei um sistema de newsletter para captar leads interessados em receber atualizações sobre o desenvolvimento e lançamento do jogo.
+                    </p>
+                    <p class="section-paragraph light-text">
+                        Recursos adicionais incluíram uma galeria interativa de screenshots e concept arts, um player de vídeo para o trailer do jogo, e uma seção de FAQ com informações detalhadas sobre requisitos de sistema e data de lançamento.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Resultados e Impacto</h2>
+                    <p class="section-paragraph light-text">
+                        A landing page do Blix superou as expectativas do cliente em termos de engajamento e conversão. Nas primeiras duas semanas após o lançamento, o site registrou mais de 50.000 visitas únicas, com uma taxa de conversão para pré-vendas de 12%, significativamente acima da média do setor para jogos indie.
+                    </p>
+                    <p class="section-paragraph light-text">
+                        O tempo médio de permanência na página foi de 4 minutos e 30 segundos, indicando um alto nível de engajamento com o conteúdo interativo. A landing page também gerou cobertura em sites especializados em games, contribuindo para a visibilidade do título antes mesmo do seu lançamento oficial.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2025 Natanael Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" class="whatsapp-icon">
+            <img src="../img/whatsapp-logo.png" alt="WhatsApp Icon">
+        </a>
+        <div class="whatsapp-balloon">
+            <span id="whatsappGreeting">Posso ajudar?</span>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

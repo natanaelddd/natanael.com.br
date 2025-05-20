@@ -1,0 +1,8 @@
+/* Base64 encoded placeholder para Instituto Assaf */
+.assaf-placeholder {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzJjM2U1MCIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNlY2YwZjEiPkluc3RpdHV0byBBc3NhZjwvdGV4dD48L3N2Zz4=');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}

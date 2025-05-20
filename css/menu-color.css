@@ -1,0 +1,7 @@
+.nav-detail {
+    display: none;
+}
+
+.nav-link:hover .nav-detail {
+    display: none;
+}

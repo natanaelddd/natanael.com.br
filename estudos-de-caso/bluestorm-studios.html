@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestorm Studios - Estudo de Caso | Natanael.com.br</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        .case-hero-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+        
+        .case-section {
+            margin-bottom: 4rem;
+        }
+        
+        .case-section-image {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .case-meta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .case-meta-item h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        
+        .case-meta-item p {
+            color: #ccc;
+        }
+        
+        .subsection-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        
+        .visit-site-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: #ff6b00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        
+        .visit-site-button:hover {
+            background-color: #ff8c3f;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .case-meta {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header sticky-header">
+        <div class="container header-container">
+            <a href="../index.html#hero" class="logo-link">
+                <img src="../img/logo_preto.png" alt="Natanael.com.br Logo" class="site-logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="../index.html#hero" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="../index.html#videos" class="nav-link">Vídeos</a></li>
+                    <li class="nav-item"><a href="../index.html#websites" class="nav-link">Websites</a></li>
+                    <li class="nav-item"><a href="../blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html#descomplicando-digital" class="cta-button">Recursos</a>
+            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navList">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="case-hero" class="content-section bg-dark">
+            <div class="container">
+                <h1 class="section-title light-text">Bluestorm Studios</h1>
+                <p class="section-paragraph light-text">Design e desenvolvimento de website para estúdio de games independente com foco em experiências imersivas e interativas.</p>
+                
+                <img src="../img/screenshots/bluestorm_vr.png" alt="Bluestorm Studios Website" class="case-hero-image">
+                
+                <div class="case-meta">
+                    <div class="case-meta-item">
+                        <h4>Cliente</h4>
+                        <p>Bluestorm Studios</p>
+                    </div>
+                    <div class="case-meta-item">
+                        <h4>Entregáveis</h4>
+                        <p>Design UI/UX, Desenvolvimento Frontend, Integração CMS</p>
+                    </div>
+                    <div class="case-meta-item">
+                        <h4>Função</h4>
+                        <p>Designer e Desenvolvedor Web</p>
+                    </div>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Visão Geral do Projeto</h2>
+                    <p class="section-paragraph light-text">
+                        A Bluestorm Studios é um estúdio independente de desenvolvimento de jogos que precisava de um website moderno e interativo para apresentar seu portfólio de jogos, atrair novos talentos e estabelecer uma presença online profissional. O desafio era criar uma experiência digital que refletisse a criatividade e inovação do estúdio, enquanto fornecia uma plataforma eficiente para divulgação de seus projetos.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Design e Interface</h2>
+                    <p class="section-paragraph light-text">
+                        O design foi inspirado na estética dos jogos desenvolvidos pelo estúdio, com elementos visuais que remetem a ambientes digitais e interfaces futuristas. Utilizei uma paleta de cores predominantemente escura com acentos em azul e verde neon, criando uma atmosfera imersiva que remete ao universo dos jogos eletrônicos.
+                    </p>
+                    <img src="../img/screenshots/bluestorm_vr.png" alt="Interface do Website Bluestorm Studios" class="case-section-image">
+                    <p class="section-paragraph light-text">
+                        A navegação foi projetada para ser intuitiva e fluida, com transições suaves entre as seções e elementos interativos que respondem ao movimento do cursor, proporcionando uma experiência semelhante à de um jogo.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Desenvolvimento e Tecnologias</h2>
+                    <p class="section-paragraph light-text">
+                        O frontend foi desenvolvido utilizando HTML5, CSS3 e JavaScript, com foco em performance e responsividade. Para criar as animações e efeitos visuais mais complexos, implementei bibliotecas como Three.js e GSAP, que permitiram adicionar elementos 3D e transições fluidas.
+                    </p>
+                    <p class="section-paragraph light-text">
+                        O site foi integrado a um CMS personalizado, permitindo que a equipe do estúdio atualize facilmente o conteúdo, adicione novos jogos ao portfólio e publique notícias sem necessidade de conhecimentos técnicos avançados.
+                    </p>
+                </div>
+                
+                <div class="case-section">
+                    <h2 class="subsection-title">Resultados e Impacto</h2>
+                    <p class="section-paragraph light-text">
+                        Após o lançamento do novo website, a Bluestorm Studios registrou um aumento significativo no tempo médio de permanência dos visitantes e uma redução na taxa de rejeição. O site também contribuiu para a captação de novos talentos e parcerias comerciais, além de fortalecer a identidade visual do estúdio no mercado de games independentes.
+                    </p>
+                    <p class="section-paragraph light-text">
+                        O projeto foi concluído dentro do prazo estipulado e recebeu feedback positivo tanto do cliente quanto dos usuários finais, cumprindo todos os objetivos estabelecidos inicialmente.
+                    </p>
+                    
+                    <a href="https://bluestormstudios.com.br/" target="_blank" class="visit-site-button">Visitar o Site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2025 Natanael Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" class="whatsapp-icon">
+            <img src="../img/whatsapp-logo.png" alt="WhatsApp Icon">
+        </a>
+        <div class="whatsapp-balloon">
+            <span id="whatsappGreeting">Posso ajudar?</span>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

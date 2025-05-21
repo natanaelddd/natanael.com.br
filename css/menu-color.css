@@ -1,7 +1,32 @@
-.nav-detail {
-    display: none;
+/* Remover completamente qualquer cor azul do menu */
+.nav-link, .nav-link.active, .nav-link:hover {
+    background-color: transparent !important;
+    color: var(--color-text-secondary);
 }
 
-.nav-link:hover .nav-detail {
-    display: none;
+.nav-link.active {
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--color-text-primary);
+}
+
+/* Esconder completamente os detalhes do menu */
+.nav-detail {
+    display: none !important;
+}
+
+/* Garantir que o indicador ativo seja apenas o ponto amarelo */
+.nav-link.active::after, .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent-primary);
+    border-radius: 50%;
 }

@@ -258,25 +258,25 @@
         </div>
     </div>
 
-    <!-- Scripts VANTA.BIRDS para o banner -->
+    <!-- Scripts VANTA.CLOUDS para o banner -->
     <script src="js/vanta/three.r134.min.js"></script>
-    <script src="js/vanta/vanta.birds.min.js"></script>
+    <script src="js/vanta/vanta.clouds.min.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        VANTA.BIRDS({
+        VANTA.CLOUDS({
             el: "#hero",
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
             minHeight: 500.00,
             minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            backgroundColor: 0x1f1f20,
-            color1: 0xffd100,
-            color2: 0xffffff,
-            colorMode: "lerpGradient",
-            backgroundAlpha: 0.84
+            skyColor: 0x1f1f20, // Cor do céu (anterior backgroundColor)
+            cloudColor: 0xffd100, // Cor principal da nuvem (anterior color1)
+            cloudShadowColor: 0x333333, // Sombra da nuvem (ajuste conforme necessário)
+            sunColor: 0xffa500, // Cor do sol (ajuste conforme necessário)
+            sunGlareColor: 0xffd700, // Brilho do sol (ajuste conforme necessário)
+            sunlightColor: 0xffffff, // Luz solar (anterior color2)
+            speed: 0.5 // Velocidade da animação (ajuste conforme necessário)
         });
     });
     </script>

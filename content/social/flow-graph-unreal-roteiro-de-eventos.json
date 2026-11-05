@@ -1,0 +1,45 @@
+{
+  "slug": "flow-graph-unreal-roteiro-de-eventos",
+  "post_date": "2026-11-06",
+  "kicker": "Unreal Engine",
+  "title": "Chega de Level Blueprint espaguete",
+  "highlight": "espaguete",
+  "blog_title": "Flow Graph: o roteiro de eventos da Unreal, organizado",
+  "repo": "github.com/MothCocoon/FlowGraph",
+  "slides": [
+    {
+      "title": "Flow Graph",
+      "body": "Plugin open source para Unreal Engine com um editor de nós feito só para o fluxo de eventos: missões, diálogos, etapas de uma experiência.\nA base que a Unreal não traz de fábrica."
+    },
+    {
+      "title": "Por que é diferente do Blueprint",
+      "bullets": [
+        "Cada nó é um objeto com lógica e dados",
+        "Nós assíncronos: esperam o evento acontecer",
+        "Os sistemas não se misturam, o grafo conecta",
+        "Debug dos nós ativos direto no Play"
+      ]
+    },
+    {
+      "title": "Nível produção",
+      "bullets": [
+        "Contribuições da Riot Games (AddOns, Data Pins)",
+        "Integração com SaveGame e Sequencer",
+        "Signal Modes: atualizar sem quebrar saves",
+        "Projeto de exemplo para UE 5.6, 5.7 e 5.8"
+      ]
+    },
+    {
+      "title": "Onde eu uso em VR",
+      "bullets": [
+        "Treinamento: cada etapa vira um nó",
+        "Tour e estande: ordem dos pontos num só lugar",
+        "Biblioteca de nós reaproveitada entre jobs"
+      ],
+      "note": "E o cliente entende o fluxo olhando o grafo, sem abrir Blueprint."
+    }
+  ],
+  "cta_title": "Salva pro próximo projeto",
+  "caption": "Chega de Level Blueprint espaguete 🍝➡️🧩\n\nTodo projeto de Unreal que cresce esbarra no mesmo problema: onde fica o roteiro? Em VR, roteiro é tudo que acontece em sequência: entrar na sala, pegar a ferramenta, a porta abrir, a narração tocar, a próxima etapa liberar.\n\nO Flow Graph é um plugin open source que organiza isso num editor de nós feito só para fluxo de eventos. Cada nó é um elemento completo (lógica + dados), espera o evento acontecer e não mistura sistemas. Tem contribuição da Riot Games e versão para UE 5.6, 5.7 e 5.8.\n\nNos meus projetos de VR, é o que deixa treinamento e tour fáceis de ajustar quando o cliente pede \"troca a ordem dessas etapas\".\n\n📌 Salva pro próximo projeto\n🔗 Explicação completa no blog (link na bio)\n\nVocê ainda roteiriza no Level Blueprint? 👇\n\n#unrealengine #unrealengine5 #ue5 #gamedev #realidadevirtual #vr #blueprints #leveldesign #opensource #github #treinamentovr #upvr",
+  "hero": "img/arte3d/flow-graph-unreal-roteiro-de-eventos.jpg"
+}

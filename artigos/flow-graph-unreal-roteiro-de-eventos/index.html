@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal | Natanael Silva</title>
+    <meta name="description" content="Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.">
+    <meta name="keywords" content="Unreal Engine, Realidade Virtual, GitHub, Open Source">
+    <meta name="author" content="Natanael Silva">
+    <link rel="canonical" href="https://natanael.com.br/artigos/flow-graph-unreal-roteiro-de-eventos/">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal">
+    <meta property="og:description" content="Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.">
+    <meta property="og:url" content="https://natanael.com.br/artigos/flow-graph-unreal-roteiro-de-eventos/">
+    <meta property="og:image" content="https://natanael.com.br/img/artigos/flow-graph-unreal-roteiro-de-eventos.jpg">
+    <meta property="article:published_time" content="2026-11-05">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal">
+    <meta name="twitter:description" content="Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.">
+    <meta name="twitter:image" content="https://natanael.com.br/img/artigos/flow-graph-unreal-roteiro-de-eventos.jpg">
+    <link rel="alternate" type="application/rss+xml" title="Natanael Silva — Artigos" href="https://natanael.com.br/feed.xml">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/nav-details.css">
+    <link rel="stylesheet" href="../../css/artigo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal","description":"Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.","datePublished":"2026-11-05","dateModified":"2026-11-05","image":"https://natanael.com.br/img/artigos/flow-graph-unreal-roteiro-de-eventos.jpg","url":"https://natanael.com.br/artigos/flow-graph-unreal-roteiro-de-eventos/","inLanguage":"pt-BR","keywords":"Unreal Engine, Realidade Virtual, GitHub, Open Source","author":{"@type":"Person","name":"Natanael Silva","url":"https://natanael.com.br"},"publisher":{"@type":"Person","name":"Natanael Silva"}}</script>
+</head>
+<body class="artigo-body">
+    <header class="site-header sticky-header">
+        <div class="container header-container">
+            <a href="../../index.html#hero" class="logo-link">
+                <img src="../../img/logo_preto.png" alt="Natanael.com.br" class="site-logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="../../index.html#hero" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../../index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="../../index.html#videos" class="nav-link">Vídeos</a></li>
+                    <li class="nav-item"><a href="../../index.html#websites" class="nav-link">Websites</a></li>
+                    <li class="nav-item"><a href="../../blog.html" class="nav-link active">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.upvr.com.br" class="cta-button" target="_blank" rel="noopener noreferrer">UPVR</a>
+            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navList">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="artigo-main">
+        <article class="artigo">
+            <header class="artigo-header">
+                <a class="artigo-voltar" href="../../blog.html">← Todos os artigos</a>
+                <div class="artigo-tags"><span class="artigo-tag">Unreal Engine</span><span class="artigo-tag">Realidade Virtual</span><span class="artigo-tag">GitHub</span><span class="artigo-tag">Open Source</span></div>
+                <h1 class="artigo-titulo">Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal</h1>
+                <p class="artigo-resumo">Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.</p>
+                <div class="artigo-meta">
+                    <span>Por Natanael Silva</span>
+                    <span>·</span>
+                    <time datetime="2026-11-05">5 de novembro de 2026</time>
+                    <span>·</span>
+                    <span>3 min de leitura</span>
+                </div>
+            </header>
+            <figure class="artigo-capa"><img src="../../img/artigos/flow-graph-unreal-roteiro-de-eventos.jpg" alt="Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal" width="1200" height="630"></figure>
+            <a class="artigo-repo" href="https://github.com/MothCocoon/FlowGraph" target="_blank" rel="noopener noreferrer"><span class="artigo-repo-label">Repositório</span><span class="artigo-repo-url">github.com/MothCocoon/FlowGraph</span><span class="artigo-repo-arrow">→</span></a>
+            <nav class="artigo-toc" aria-label="Neste artigo"><strong>Neste artigo</strong><ol><li><a href="#o-que-e">O que é</a></li><li><a href="#por-que-e-coisa-de-quem-trabalha-serio-com-unreal">Por que é coisa de quem trabalha sério com Unreal</a></li><li><a href="#como-isso-se-aplica-a-projetos-de-vr">Como isso se aplica a projetos de VR</a></li><li><a href="#como-comecar">Como começar</a></li><li><a href="#links">Links</a></li></ol></nav>
+            <div class="artigo-conteudo">
+<p>Todo projeto de Unreal que passa de um protótipo esbarra no mesmo problema: <strong>onde fica o roteiro?</strong> Numa experiência de VR, &quot;roteiro&quot; é tudo o que acontece em sequência — o usuário entra na sala, pega a ferramenta, a porta abre, a narração toca, a próxima etapa libera. Quando isso vai parar no Level Blueprint, em pouco tempo vira o que a própria documentação do Flow Graph chama de &quot;monstro de espaguete voador&quot;.</p>
+<p>O <strong>Flow Graph</strong>, mantido pelo desenvolvedor por trás do perfil MothCocoon no GitHub, é a resposta que muitos estúdios adotaram para isso.</p>
+<h2 id="o-que-e">O que é</h2>
+<p>É um plugin open source para Unreal Engine que traz um <strong>editor de nós feito especificamente para o fluxo de eventos</strong> de um mundo virtual. A ideia vem de ferramentas que estúdios de jogos narrativos usam há anos — o autor cita os editores de missões e diálogos de The Witcher como referência — e que a Unreal não tem de fábrica.</p>
+<p>A diferença para o Blueprint está no conceito:</p>
+<ul><li><strong>Cada nó é um objeto, não uma função.</strong> Um nó guarda a lógica e os dados de um elemento inteiro do jogo — &quot;esperar o jogador entrar na área&quot;, &quot;tocar a narração&quot;, &quot;liberar a porta&quot; — e você escreve isso uma vez para o projeto todo.</li><li><strong>Os nós são assíncronos por natureza.</strong> Um nó ativo fica escutando um evento e só dispara a saída quando ele acontece. Não existe aquele emaranhado de Delay e Branch para esperar coisas.</li><li><strong>Os sistemas não se misturam.</strong> O código da porta não precisa saber da narração. O grafo é o lugar onde você conecta as peças.</li><li><strong>Debug no próprio grafo:</strong> durante o Play, o editor mostra quais nós estão ativos e as mensagens que você definir em cima deles.</li></ul>
+<h2 id="por-que-e-coisa-de-quem-trabalha-serio-com-unreal">Por que é coisa de quem trabalha sério com Unreal</h2>
+<p>O Flow Graph é deliberadamente simples: ele <strong>não vem com um sistema pronto</strong> de missões ou diálogos. Ele é a base para você construir o seu — e é exatamente por isso que é usado em produção. Algumas coisas que mostram a maturidade do projeto:</p>
+<ul><li><strong>Contribuições da Riot Games</strong>, incluindo os recursos de AddOns e Data Pins que levaram o plugin à versão 2.0.</li><li><strong>Integração com SaveGame</strong>, salvando o estado dos nós ativos, e com o Sequencer.</li><li><strong>Signal Modes</strong>, para alterar o grafo numa atualização sem quebrar saves antigos.</li><li><strong>Versões para as engines atuais</strong>, com projeto de exemplo (FlowGame) empacotado para UE 5.6, 5.7 e 5.8.</li></ul>
+<h2 id="como-isso-se-aplica-a-projetos-de-vr">Como isso se aplica a projetos de VR</h2>
+<p>Para quem entrega experiências imersivas para clientes, o Flow Graph resolve dores bem concretas:</p>
+<ul><li><strong>Treinamentos em VR</strong>: cada etapa (pegar o EPI, inspecionar o equipamento, executar o procedimento) vira um nó. Mudar a ordem ou inserir uma etapa nova é reconectar fios, não reescrever lógica.</li><li><strong>Tours e estandes</strong>: a sequência de pontos de interesse, narrações e transições fica visível num só lugar — fácil de ajustar quando o cliente pede &quot;troca a ordem desses dois&quot;.</li><li><strong>Reaproveitamento entre projetos</strong>: os nós que você cria (teleporte para ponto, aguardar interação, tocar áudio) viram uma biblioteca da casa, reutilizada no próximo job.</li></ul>
+<p>E tem um ganho que pouca gente conta: <strong>o grafo é legível para quem não é programador</strong>. Dá para mostrar ao cliente ou ao roteirista como a experiência flui, sem abrir Blueprint nenhum.</p>
+<h2 id="como-comecar">Como começar</h2>
+<ol><li>Baixe o plugin do repositório e coloque na pasta <code>Plugins</code> do seu projeto (ou abra o projeto de exemplo FlowGame da sua versão da engine).</li><li>Desde a versão 2.2 o plugin vem <strong>desativado por padrão</strong>: ative em Edit → Plugins ou no <code>.uproject</code>.</li><li>Assista à apresentação de 24 minutos indicada no README antes de sair criando nós — o autor insiste, e com razão: entender o conceito evita usar o Flow como se fosse Blueprint.</li></ol>
+<h2 id="links">Links</h2>
+<ul><li>Repositório: <a href="https://github.com/MothCocoon/FlowGraph" target="_blank" rel="noopener noreferrer">github.com/MothCocoon/FlowGraph</a></li><li>Documentação: <a href="https://mothcocoon.github.io/FlowGraph/" target="_blank" rel="noopener noreferrer">mothcocoon.github.io/FlowGraph</a></li></ul>
+<p>Desenvolve experiências em Unreal e quer trocar ideia sobre arquitetura de projetos VR? Me chama no Instagram <a href="https://www.instagram.com/natanaelddd/" target="_blank" rel="noopener noreferrer">@natanaelddd</a>.</p>
+            </div>
+            <aside class="artigo-autor">
+                <img src="../../img/logo_natanael_black.png" alt="" class="artigo-autor-logo">
+                <div>
+                    <strong>Natanael Silva</strong>
+                    <p>Desenvolvedor e creative technologist. Crio experiências em Realidade Virtual e Mista, projetos em Unreal Engine e ferramentas com IA na UPVR.</p>
+                    <p class="artigo-autor-links">
+                        <a href="https://www.instagram.com/natanaelddd/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.upvr.com.br" target="_blank" rel="noopener noreferrer">UPVR</a>
+                        <a href="https://wa.me/5516991239926" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    </p>
+                </div>
+            </aside>
+            <nav class="artigo-nav"><span></span><span></span></nav>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>© 2026 Natanael Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

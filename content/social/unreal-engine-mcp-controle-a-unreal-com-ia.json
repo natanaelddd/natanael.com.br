@@ -1,0 +1,37 @@
+{
+  "slug": "unreal-engine-mcp-controle-a-unreal-com-ia",
+  "post_date": "2026-11-08",
+  "kicker": "Unreal Engine + IA",
+  "title": "Controle a Unreal Engine conversando com a IA",
+  "highlight": "conversando",
+  "repo": "github.com/flopperam/unreal-engine-mcp",
+  "slides": [
+    {
+      "title": "unreal-engine-mcp",
+      "body": "Servidor MCP + plugin em C++ que conectam Claude, Cursor ou Windsurf à Unreal Engine 5.5+.\nVocê descreve, a IA executa no editor."
+    },
+    {
+      "title": "O que dá para fazer",
+      "bullets": [
+        "Montar cenas e mundos a partir de texto",
+        "Mover, girar e escalar atores",
+        "Criar nós de Blueprint, variáveis e funções"
+      ]
+    },
+    {
+      "title": "Como funciona",
+      "bullets": [
+        "Você pede no cliente de IA",
+        "Um servidor Python traduz em comandos",
+        "O plugin dentro da Unreal executa via TCP"
+      ]
+    },
+    {
+      "title": "Instalação",
+      "code": "$ git clone github.com/flopperam/\n  unreal-engine-mcp\n$ cd unreal-engine-mcp/Python\n$ uv run unreal_mcp_server_advanced.py",
+      "note": "UE 5.5+ e Python 3.12+. Projeto em desenvolvimento ativo: use controle de versão."
+    }
+  ],
+  "caption": "E se você pudesse pedir para a Unreal Engine: \"monta uma vila com dez casas em volta da praça\"? 🏰\n\nO unreal-engine-mcp conecta Claude, Cursor ou Windsurf à Unreal 5.5+ pelo protocolo MCP. A IA cria e posiciona atores, monta cenários e até gera nós de Blueprint.\n\nNo dia a dia de VR e archviz, ele resolve as tarefas repetitivas de editor (espalhar props, organizar atores, montar variações) e sobra tempo para o que precisa de olho humano: luz, conforto e performance.\n\n📌 Salva e testa numa cópia do projeto\n🔗 Passo a passo no blog (link na bio)\n\nQual tarefa da Unreal você entregaria primeiro para a IA? 👇\n\n#unrealengine #unrealengine5 #ue5 #mcp #ia #claudecode #gamedev #blueprints #realidadevirtual #archviz #github #upvr",
+  "hero": "img/arte3d/unreal-engine-mcp-controle-a-unreal-com-ia.jpg"
+}

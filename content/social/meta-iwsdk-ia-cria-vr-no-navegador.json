@@ -1,0 +1,36 @@
+{
+  "slug": "meta-iwsdk-ia-cria-vr-no-navegador",
+  "post_date": "2026-11-06",
+  "kicker": "Repositório do dia",
+  "title": "A Meta ensinou a IA a criar VR sozinha",
+  "blog_title": "A Meta ensinou a IA a criar VR no navegador",
+  "repo": "npm create @iwsdk",
+  "slides": [
+    {
+      "title": "O que é o IWSDK",
+      "body": "O Immersive Web SDK é o framework open source (MIT) da Meta para criar Realidade Virtual que roda direto no navegador, via WebXR.\nFísica, hand tracking, locomoção e interface espacial já vêm prontos."
+    },
+    {
+      "title": "A novidade: a IA fecha o ciclo",
+      "bullets": [
+        "Escreve o código",
+        "Recarrega e tira screenshot da cena",
+        "Lê o console e o estado dos objetos",
+        "Corrige e repete, sem você no meio"
+      ],
+      "note": "Funciona com Claude Code, Cursor, GitHub Copilot e Codex."
+    },
+    {
+      "title": "15 horas",
+      "body": "Foi o tempo para a Meta reconstruir do zero o Project Flowerbed, uma experiência VR de 2022 com dezenas de milhares de linhas de código, usando esse fluxo com IA.",
+      "highlight": "15 horas"
+    },
+    {
+      "title": "Como começar",
+      "code": "$ npm create @iwsdk",
+      "note": "Node 20+, Chrome ou Edge e seu agente de IA. O Quest ajuda a testar, mas não é obrigatório. Deploy em Vercel, Netlify ou GitHub Pages: o cliente abre pelo link."
+    }
+  ],
+  "caption": "A Meta ensinou a IA a criar Realidade Virtual sozinha 🥽🤖\n\nO Immersive Web SDK (IWSDK) é o framework open source da Meta para fazer VR que roda no navegador. A novidade: ele vem pronto para agentes como Claude Code, Cursor e Copilot escreverem, testarem e corrigirem a experiência em ciclo.\n\nPara provar, a Meta reconstruiu o Project Flowerbed (VR de 2022, dezenas de milhares de linhas) em ~15 horas.\n\nPara quem faz VR para clientes, o ganho maior é a distribuição: manda um link e a pessoa abre no Quest, sem loja e sem APK.\n\n📌 Salva pra testar depois\n🔗 Passo a passo completo no blog (link na bio)\n\n#realidadevirtual #webxr #metaquest #ia #inteligenciaartificial #vr #desenvolvimento #claudecode #github #opensource #threejs #upvr",
+  "hero": "img/arte3d/meta-iwsdk-ia-cria-vr-no-navegador.jpg"
+}

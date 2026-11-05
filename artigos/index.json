@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "meta-iwsdk-ia-cria-vr-no-navegador",
+    "title": "A Meta ensinou a IA a criar VR no navegador: conheça o Immersive Web SDK",
+    "description": "O IWSDK é o framework open source da Meta para criar Realidade Virtual em WebXR. Agora ele vem pronto para agentes de IA como Claude Code, Cursor e Copilot escreverem, testarem e corrigirem a experiência sozinhos.",
+    "date": "2026-11-05",
+    "tags": [
+      "WebXR",
+      "Realidade Virtual",
+      "IA",
+      "Meta Quest"
+    ],
+    "cover": "img/artigos/meta-iwsdk-ia-cria-vr-no-navegador.jpg",
+    "repo": "https://iwsdk.dev",
+    "url": "https://natanael.com.br/artigos/meta-iwsdk-ia-cria-vr-no-navegador/"
+  }
+]

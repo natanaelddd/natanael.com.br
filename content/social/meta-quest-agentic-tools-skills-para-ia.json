@@ -1,0 +1,39 @@
+{
+  "slug": "meta-quest-agentic-tools-skills-para-ia",
+  "post_date": "2026-11-09",
+  "kicker": "Oficial da Meta",
+  "title": "Skills oficiais para a IA desenvolver para o Quest",
+  "highlight": "Quest",
+  "repo": "github.com/meta-quest/agentic-tools",
+  "slides": [
+    {
+      "title": "meta-quest/agentic-tools",
+      "body": "Repositório oficial da Meta com skills e um servidor MCP que ensinam seu agente de IA a criar, depurar e publicar apps para Quest e Horizon OS."
+    },
+    {
+      "title": "Algumas skills",
+      "bullets": [
+        "Criar projeto Unity, Unreal, WebXR ou Android",
+        "Debug de VR com logs e screenshots do headset",
+        "Análise de performance com Perfetto",
+        "Checklist de envio para a Horizon Store"
+      ]
+    },
+    {
+      "title": "Meta VR CLI",
+      "body": "Antes chamada hzdb. Dá ao agente acesso ao headset conectado: logs ao vivo, screenshots, apps e busca na documentação.\nAté busca modelos 3D da biblioteca da Meta por texto."
+    },
+    {
+      "title": "Funciona com",
+      "bullets": [
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "Gemini CLI e outros"
+      ],
+      "note": "Headset em modo desenvolvedor para as ferramentas de dispositivo."
+    }
+  ],
+  "caption": "A Meta publicou skills oficiais para a IA desenvolver para o Quest 🛠️🥽\n\nO repositório meta-quest/agentic-tools ensina seu agente (Claude Code, Cursor, Copilot, Gemini CLI…) a:\n→ criar projeto em Unity, Unreal ou WebXR\n→ depurar com logs e screenshots do headset\n→ analisar performance com Perfetto\n→ conferir os requisitos da Horizon Store antes de enviar\n\nO fim do projeto (queda de frame só no headset, reprovação na loja) é onde mais se perde tempo. É exatamente aí que isso ajuda.\n\n📌 Salva se você desenvolve para Quest\n🔗 Detalhes no blog (link na bio)\n\n#metaquest #quest3 #realidadevirtual #realidademista #vr #ia #claudecode #unrealengine #unity #gamedev #github #upvr",
+  "hero": "img/arte3d/meta-quest-agentic-tools-skills-para-ia.jpg"
+}

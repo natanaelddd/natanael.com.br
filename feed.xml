@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Natanael Silva — Artigos</title>
+  <link>https://natanael.com.br/blog.html</link>
+  <atom:link href="https://natanael.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Repositórios do GitHub, Realidade Virtual, Unreal Engine e IA — explicados em português, todo dia.</description>
+  <language>pt-BR</language>
+  <item>
+    <title>Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal</title>
+    <link>https://natanael.com.br/artigos/flow-graph-unreal-roteiro-de-eventos/</link>
+    <guid>https://natanael.com.br/artigos/flow-graph-unreal-roteiro-de-eventos/</guid>
+    <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+    <description>Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.</description>
+    <category>Unreal Engine</category>
+    <category>Realidade Virtual</category>
+    <category>GitHub</category>
+    <category>Open Source</category>
+  </item>
+</channel>
+</rss>

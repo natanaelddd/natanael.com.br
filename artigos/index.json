@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "flow-graph-unreal-roteiro-de-eventos",
+    "title": "Flow Graph: o plugin open source que organiza o roteiro de eventos na Unreal",
+    "description": "Missões, diálogos, etapas de um treinamento em VR. O Flow Graph troca o Level Blueprint espaguete por um editor de nós feito para roteirizar eventos, com contribuições até da Riot Games.",
+    "date": "2026-11-05",
+    "tags": [
+      "Unreal Engine",
+      "Realidade Virtual",
+      "GitHub",
+      "Open Source"
+    ],
+    "cover": "img/artigos/flow-graph-unreal-roteiro-de-eventos.jpg",
+    "repo": "https://github.com/MothCocoon/FlowGraph",
+    "url": "https://natanael.com.br/artigos/flow-graph-unreal-roteiro-de-eventos/"
+  }
+]

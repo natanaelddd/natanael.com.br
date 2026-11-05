@@ -1,0 +1,38 @@
+{
+  "slug": "pixal3d-foto-vira-modelo-3d",
+  "post_date": "2026-11-07",
+  "kicker": "IA + 3D",
+  "title": "Uma foto vira modelo 3D com textura",
+  "highlight": "3D",
+  "repo": "github.com/TencentARC/Pixal3D",
+  "slides": [
+    {
+      "title": "Pixal3D",
+      "body": "Projeto da Universidade Tsinghua com o Tencent ARC Lab, aceito no SIGGRAPH 2026.\nVocê manda uma imagem e recebe um GLB com materiais PBR."
+    },
+    {
+      "title": "O truque",
+      "body": "Em vez de usar a foto só como inspiração, ele projeta cada pixel de volta para o espaço 3D.\nResultado: forma e detalhes muito mais fiéis à imagem original."
+    },
+    {
+      "title": "Como testar",
+      "bullets": [
+        "Demo no Hugging Face, direto no navegador",
+        "Local: base TRELLIS.2 + requirements do repo",
+        "Já tem integração com ComfyUI"
+      ],
+      "code": "$ python inference.py \\\n    --image foto.png \\\n    --output modelo.glb"
+    },
+    {
+      "title": "No pipeline de Unreal e VR",
+      "bullets": [
+        "Props de cenário para tours virtuais",
+        "Protótipo de ambiente para o cliente aprovar",
+        "Primeira versão 3D de produto para AR/VR"
+      ],
+      "note": "Para Quest, reduza polígonos antes. Confira a licença antes de uso comercial."
+    }
+  ],
+  "caption": "Uma única foto → modelo 3D com textura PBR 🦊➡️🧊\n\nO Pixal3D (Tsinghua + Tencent ARC, SIGGRAPH 2026) projeta os pixels da imagem de volta para o 3D, o que deixa o resultado muito mais fiel do que os geradores comuns. A saída é um GLB pronto para levar para a Unreal.\n\nOnde eu usaria em projetos de VR:\n→ props de cenário para tours virtuais\n→ protótipo rápido para o cliente aprovar\n→ primeira versão 3D de produto para AR\n\n⚠️ Para Quest, otimize a malha antes. E leia a licença antes de usar comercialmente.\n\n📌 Salva pra testar\n🔗 Artigo completo no blog (link na bio)\n\n#ia #3d #modelagem3d #unrealengine #realidadevirtual #gamedev #github #opensource #ai3d #comfyui #siggraph #upvr",
+  "hero": "img/arte3d/pixal3d-foto-vira-modelo-3d.jpg"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "unrealmcphub-central-de-ia-para-unreal",
+  "post_date": "2026-11-11",
+  "kicker": "Unreal Engine + IA",
+  "title": "A IA compila, abre e reinicia a Unreal sozinha",
+  "highlight": "sozinha",
+  "repo": "github.com/blackplume233/UnrealMCPHub",
+  "slides": [
+    {
+      "title": "O problema",
+      "body": "Servidores MCP da Unreal rodam dentro do editor.\nSe ele está fechado ou cai, o agente de IA fica cego."
+    },
+    {
+      "title": "UnrealMCPHub",
+      "body": "Uma central que fica fora do editor e é o único ponto de contato do agente. Funciona com o plugin RemoteMCP.",
+      "highlight": "fora"
+    },
+    {
+      "title": "O que ele faz",
+      "bullets": [
+        "Configura o projeto pelo .uproject",
+        "Compila pelo Unreal Build Tool",
+        "Abre o editor e espera ficar pronto",
+        "Detecta crash, lê o relatório e reinicia",
+        "Gerencia várias instâncias da Unreal"
+      ]
+    },
+    {
+      "title": "Instalação",
+      "code": "$ uvx unrealhub serve\n$ unrealhub setup MeuJogo.uproject\n$ unrealhub compile",
+      "note": "Python 3.11+, UE 5.x, licença MIT. Teste numa cópia do projeto."
+    }
+  ],
+  "caption": "A IA agora compila, abre e reinicia a Unreal sozinha ⚙️\n\nO UnrealMCPHub fica fora do editor e vira o ponto único de contato do seu agente de IA. Ele configura o projeto, compila pelo UBT, abre o editor, detecta crash, lê o relatório e reinicia, sem você de babá.\n\nEm projeto grande de VR, em que compilar e abrir leva minutos, isso deixa a IA tocar uma tarefa longa de ponta a ponta.\n\n📌 Salva pra montar seu setup\n🔗 Configuração completa no blog (link na bio)\n\nVocê já usa IA com a Unreal? Conta aqui 👇\n\n#unrealengine #ue5 #mcp #ia #claudecode #cursor #gamedev #realidadevirtual #automacao #github #opensource #upvr",
+  "hero": "img/arte3d/unrealmcphub-central-de-ia-para-unreal.jpg"
+}
